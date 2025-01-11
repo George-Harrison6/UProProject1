@@ -6,6 +6,6 @@ public class SettingButton : MonoBehaviour, IClick
 {
     public void CLickOnButton()
     {
-        FindObjectOfType<Portal>()?.transform.GetChild(0);
+        FindObjectOfType<Portal>()?.transform.GetChild(0).gameObject.SetActive(true);
     }
 }
