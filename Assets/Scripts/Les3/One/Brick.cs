@@ -5,7 +5,6 @@ using DG.Tweening;
 
 public class Brick : MonoBehaviour, IBlock
 {
-
     private Renderer rend;
 
     private void Start()
