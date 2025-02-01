@@ -222,7 +222,7 @@ GameObject:
   - component: {fileID: 2028917102890397339}
   - component: {fileID: 2028917102890397333}
   - component: {fileID: 2028917102890397332}
-  - component: {fileID: -1072206779679605585}
+  - component: {fileID: 2798735196284814865}
   m_Layer: 5
   m_Name: ObjectPanel 2
   m_TagString: Untagged
@@ -291,7 +291,7 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
---- !u!114 &-1072206779679605585
+--- !u!114 &2798735196284814865
 MonoBehaviour:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
@@ -300,15 +300,16 @@ MonoBehaviour:
   m_GameObject: {fileID: 2028917102890397338}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: a5c66612b7f391e438c52f9dd77f4ba8, type: 3}
+  m_Script: {fileID: 11500000, guid: 15724adb8c80e72468f850ff5238c646, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   imageObject: {fileID: 2028917101997240342}
   textObject: {fileID: 2028917102693706887}
-  spriteObject: {fileID: 21300000, guid: d8a1708db6429f64b88a7f7463571491, type: 3}
-  nameObject: bow fire
-  button: {fileID: 5298473338280223719}
-  strTextButton: LevelUp
+  spriteObject: {fileID: 21300000, guid: d9036f3dae0dde643b6e53047addc5fe, type: 3}
+  nameObject: Bow
+  textButton: {fileID: 5298473338280223719}
+  strTextButton: Level Up
+  button: {fileID: 2402570201832906173}
 --- !u!1 &2856635959009780818
 GameObject:
   m_ObjectHideFlags: 0
@@ -321,6 +322,7 @@ GameObject:
   - component: {fileID: 8784821024047337334}
   - component: {fileID: 6432619253146940042}
   - component: {fileID: 2402570201832906173}
+  - component: {fileID: 9091183961993985220}
   m_Layer: 5
   m_Name: Button
   m_TagString: Untagged
@@ -346,8 +348,8 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
+  m_AnchoredPosition: {x: 0, y: -180}
+  m_SizeDelta: {x: -100, y: -440}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &8784821024047337334
 CanvasRenderer:
@@ -370,14 +372,14 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 0}
+  m_Color: {r: 0.16930607, g: 0, b: 0.4339623, a: 1}
   m_RaycastTarget: 1
   m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
   m_Maskable: 1
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 0}
+  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
   m_Type: 1
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -431,6 +433,19 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &9091183961993985220
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2856635959009780818}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: af5750d20ab5ff94e81a01cf091d63ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  time: 2
 --- !u!1 &8579155339368122650
 GameObject:
   m_ObjectHideFlags: 0
@@ -497,7 +512,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: 
+  m_text: 0
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
   m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
@@ -506,8 +521,8 @@ MonoBehaviour:
   m_fontMaterials: []
   m_fontColor32:
     serializedVersion: 2
-    rgba: 4281479730
-  m_fontColor: {r: 0.19607843, g: 0.19607843, b: 0.19607843, a: 1}
+    rgba: 4278190200
+  m_fontColor: {r: 0.4716981, g: 0, b: 0, a: 1}
   m_enableVertexGradient: 0
   m_colorMode: 3
   m_fontColorGradient:

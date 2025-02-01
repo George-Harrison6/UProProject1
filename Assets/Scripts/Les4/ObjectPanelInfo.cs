@@ -14,16 +14,16 @@ public class ObjectPanelInfo : MonoBehaviour
     private Sprite spriteObject;
     [SerializeField]
     private string nameObject;
-    [SerializeField]
-    private TMP_Text button;
-    [SerializeField]
-    private string strTextButton;
     
 
     private void Awake()
     {
+        SetText();
+    }
+
+    public  virtual void SetText()
+    {
         imageObject.sprite = spriteObject;
         textObject.text = nameObject;
-        button.text = strTextButton;
     }
 }
